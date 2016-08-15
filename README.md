@@ -1,4 +1,4 @@
-# Capitalise UK Post Towns
+# Capitalise UK Post Towns ![Travis](https://travis-ci.org/ideal-postcodes/capitalise-post-town.svg?branch=master)
 
 Small javascript library and test suite that will properly capitalise post town names
 
