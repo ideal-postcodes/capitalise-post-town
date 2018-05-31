@@ -1,9 +1,9 @@
 "use strict";
 
-const fs = require("fs");
-const path = require("path");
-const assert = require("chai").assert;
-const capitalise = require("../index.js");
+import * as fs from "fs";
+import * as path from "path";
+import { assert } from "chai";
+import { capitalisePostTown } from "../lib/index";
 
 const posttowns = fs.readFileSync(path.join(__dirname, "./post_towns.csv"), { encoding: "utf8" })
 	.split("\n")
@@ -14,7 +14,7 @@ const capitalisedPosttowns = posttowns.map(posttown => posttown.toUpperCase());
 describe("capitalise", () => {
 	for (let i = 0; i < posttowns.length; i++) {
 		it (`correctly capitalises ${posttowns[i]}`, () => {
-			assert.equal(capitalise(capitalisedPosttowns[i]), posttowns[i]);
+			assert.equal(capitalisePostTown(capitalisedPosttowns[i]), posttowns[i]);
 		});
 	}
 });

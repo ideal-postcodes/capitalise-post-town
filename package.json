@@ -3,11 +3,36 @@
   "version": "1.0.0",
   "description": "capitalise UK post towns correctly & test suite",
   "main": "dist/capitalise-post-town.min.js",
+  "typings": "dist/index.d.ts",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/"
+    "test": "npm run lint && NODE_ENV=test node_modules/.bin/nyc node_modules/.bin/mocha --opts mocha.opts test/*.ts",
+    "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json lib/**/*.ts",
+    "build": "npm run lint && node_modules/.bin/tsc"
+  },
+    "nyc": {
+    "include": [
+      "lib/**/*.ts"
+    ],
+    "exclude": [
+      "dist/*"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "all": true
   },
   "repository": {
     "type": "git",
@@ -26,17 +51,19 @@
     "url": "https://github.com/ideal-postcodes/capitalise_post_town/issues"
   },
   "homepage": "https://github.com/ideal-postcodes/capitalise_post_town#readme",
-  "dependencies": {},
+  "dependencies": {
+    "typescript": "^2.8.3"
+  },
   "devDependencies": {
-    "babel-preset-es2015": "~6.13.2",
-    "chai": "~3.5.0",
-    "gulp": "~3.9.1",
-    "gulp-babel": "~6.1.2",
-    "gulp-jslint": "~1.0.1",
-    "gulp-mocha": "~3.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "~2.0.0",
-    "mocha": "~3.0.2",
-    "run-sequence": "~1.2.2"
+    "@types/chai": "^4.1.3",
+    "@types/mocha": "^5.2.0",
+    "@types/node": "^6.0.111",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nyc": "^11.8.0",
+    "source-map-support": "^0.5.6",
+    "ts-node": "^6.0.3",
+    "tslint": "^5.10.0",
+    "typings": "^2.1.1"
   }
 }
