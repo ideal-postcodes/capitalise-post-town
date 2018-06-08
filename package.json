@@ -12,7 +12,7 @@
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json lib/**/*.ts",
     "build": "npm run lint && node_modules/.bin/tsc"
   },
-    "nyc": {
+  "nyc": {
     "include": [
       "lib/**/*.ts"
     ],
