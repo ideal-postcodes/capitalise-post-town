@@ -4,7 +4,7 @@ const exclusion = /^(of|le|upon|on|the)$/;
 const containsAmpersand = /\w+&\w+/;
 
 // capitalise word with exceptions on exclusion list
-const capitaliseWord = (word: string) => {
+const capitaliseWord = (word: string): string => {
 	word = word.toLowerCase();
 	if (word.match(exclusion)) return word;
 	if (word.match(containsAmpersand)) return word.toUpperCase();
@@ -16,7 +16,7 @@ const joiner = /-/;
 const joinerWord = /^(in|de|under|upon|y|on|over|the|by)$/;
 
 // Check for names connected with hyphens
-const checkJoins = (string: string) => {
+const checkJoins = (string: string): string => {
 	if (string.match(joiner) === null) return string;
 
 	return string
@@ -31,20 +31,18 @@ const checkJoins = (string: string) => {
 
 const boness = /bo'ness/i;
 
-// Single instance cases
-const exceptions = (string: string) => {
-	if (string.match(boness)) return "Bo'Ness";
+// Handles unusual names which cannot be easily generalised into a rule
+const exceptions = (str: string): string => {
+	if (str.match(boness)) return "Bo'Ness";
 
-	return string;
+	return str;
 }
 
-const capitalisePostTown = (posttown: string) => {
-	return posttown
+export const capitalisePostTown = (postTown: string): string => {
+	return postTown
 		.split(" ")
 		.map(capitaliseWord)
 		.map(checkJoins)
 		.map(exceptions)
 		.join(" ");
 }
-
-export { capitalisePostTown }

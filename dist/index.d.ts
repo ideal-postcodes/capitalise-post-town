@@ -1,2 +1,1 @@
-declare const capitalisePostTown: (posttown: string) => string;
-export { capitalisePostTown };
+export declare const capitalisePostTown: (postTown: string) => string;

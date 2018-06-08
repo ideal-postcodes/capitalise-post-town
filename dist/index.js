@@ -27,19 +27,18 @@ var checkJoins = function (string) {
         .join("-");
 };
 var boness = /bo'ness/i;
-// Single instance cases
-var exceptions = function (string) {
-    if (string.match(boness))
+// Handles unusual names which cannot be easily generalised into a rule
+var exceptions = function (str) {
+    if (str.match(boness))
         return "Bo'Ness";
-    return string;
+    return str;
 };
-var capitalisePostTown = function (posttown) {
-    return posttown
+exports.capitalisePostTown = function (postTown) {
+    return postTown
         .split(" ")
         .map(capitaliseWord)
         .map(checkJoins)
         .map(exceptions)
         .join(" ");
 };
-exports.capitalisePostTown = capitalisePostTown;
 //# sourceMappingURL=index.js.map
