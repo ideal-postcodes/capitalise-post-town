@@ -1,4 +1,6 @@
-# Capitalise UK Post Towns ![Travis](https://travis-ci.org/ideal-postcodes/capitalise-post-town.svg?branch=master)
+[![CircleCI](https://circleci.com/gh/ideal-postcodes/capitalise-post-town.svg?style=svg)](https://circleci.com/gh/ideal-postcodes/capitalise-post-town) [![Coverage Status](https://coveralls.io/repos/github/ideal-postcodes/capitalise-post-town/badge.svg?branch=master)](https://coveralls.io/github/ideal-postcodes/capitalise-post-town?branch=master)
+
+# Capitalise UK Post Towns
 
 Small javascript library and test suite that will properly capitalise post town names
 
@@ -6,22 +8,28 @@ Takes into account odd peculiar naming rules and exceptions
 
 Input needs to be correctly spaced and/or hyphenated
 
-## 
+## Install
+
+```
+npm install capitalise-post-town
+```
+
+## Usage
 
 ```javascript
-const cap = require("capitalise-post-town");
+const { capitalisePostTown } = require("capitalise-post-town");
 
 // Simple Case
-cap("DRYBROOK") // => Drybrook
+capitalisePostTown("DRYBROOK") // => Drybrook
 
 // Hypenated
-cap("HENLEY-IN-ARDEN") // => Henley-in-Arden
+capitalisePostTown("HENLEY-IN-ARDEN") // => Henley-in-Arden
 
 // Minor uncapitalised words
-cap("WALTON on THE naze") // => Walton on the Naze
+capitalisePostTown("WALTON on THE naze") // => Walton on the Naze
 
 // Exception
-cap("BO'NESS") // => Bo'Ness
+capitalisePostTown("BO'NESS") // => Bo'Ness
 ```
 
 ## License

@@ -2,52 +2,51 @@ version: 2
 jobs:
    node6:
      docker:
-       - image: circleci/node:6
-     
+       - image: circleci/node:6     
      steps:
        - checkout
        - restore_cache:
            keys:
-             - npm-deps-{{ checksum "package.json" }}
+             - npm-deps-{{ checksum "package-lock.json" }}
        - run: npm install
        - save_cache:
-           key: npm-deps-{{ checksum "package.json" }}
+           key: npm-deps-{{ checksum "package-lock.json" }}
            paths:
              - node_modules/
        - run: npm test
-       
+       - run: npm run coverage
 
    node8:
      docker:
        - image: circleci/node:8
-     
      steps:
        - checkout
        - restore_cache:
            keys:
-             - npm-deps-{{ checksum "package.json" }}
+             - npm-deps-{{ checksum "package-lock.json" }}
        - run: npm install
        - save_cache:
-           key: npm-deps-{{ checksum "package.json" }}
+           key: npm-deps-{{ checksum "package-lock.json" }}
            paths:
              - node_modules/
        - run: npm test
+       - run: npm run coverage
 
    node10:
      docker:
        - image: circleci/node:10
-     
      steps:
        - checkout
        - restore_cache:
            keys:
-             - npm-deps-{{ checksum "package.json" }}
+             - npm-deps-{{ checksum "package-lock.json" }}
        - run: npm install
        - save_cache:
-           key: npm-deps-{{ checksum "package.json" }}
+           key: npm-deps-{{ checksum "package-lock.json" }}
            paths:
              - node_modules/
        - run: npm test
+       - run: npm run coverage
        
 workflows:
   version: 2
