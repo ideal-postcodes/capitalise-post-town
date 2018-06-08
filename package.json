@@ -1,16 +1,18 @@
 {
   "name": "capitalise-post-town",
-  "version": "1.0.0",
-  "description": "capitalise UK post towns correctly & test suite",
-  "main": "dist/capitalise-post-town.min.js",
-  "typings": "dist/index.d.ts",
+  "version": "2.0.0",
+  "description": "Capitalise UK post towns correctly",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "npm run lint && NODE_ENV=test node_modules/.bin/nyc node_modules/.bin/mocha --opts mocha.opts test/*.ts",
+    "test": "npm run lint && NODE_ENV=test node_modules/.bin/nyc node_modules/.bin/mocha --opts mocha.opts",
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json lib/**/*.ts",
-    "build": "npm run lint && node_modules/.bin/tsc"
+    "build": "npm run lint && node_modules/.bin/tsc",
+    "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls || true",
+    "prepare": "npm run build"
   },
   "nyc": {
     "include": [
@@ -52,18 +54,19 @@
   },
   "homepage": "https://github.com/ideal-postcodes/capitalise_post_town#readme",
   "dependencies": {
-    "typescript": "^2.8.3"
+    "typescript": "~2.8.3"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.3",
-    "@types/mocha": "^5.2.0",
-    "@types/node": "^6.0.111",
-    "chai": "^4.1.2",
-    "mocha": "^5.2.0",
-    "nyc": "^11.8.0",
-    "source-map-support": "^0.5.6",
-    "ts-node": "^6.0.3",
-    "tslint": "^5.10.0",
-    "typings": "^2.1.1"
+    "@types/chai": "~4.1.3",
+    "@types/mocha": "~5.2.0",
+    "@types/node": "~6.0.111",
+    "chai": "~4.1.2",
+    "coveralls": "^3.0.1",
+    "mocha": "~5.2.0",
+    "nyc": "~11.8.0",
+    "source-map-support": "~0.5.6",
+    "ts-node": "~6.0.3",
+    "tslint": "~5.10.0",
+    "typings": "~2.1.1"
   }
 }
