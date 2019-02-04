@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/ideal-postcodes/capitalise-post-town.svg?style=svg)](https://circleci.com/gh/ideal-postcodes/capitalise-post-town) [![Coverage Status](https://coveralls.io/repos/github/ideal-postcodes/capitalise-post-town/badge.svg?branch=master)](https://coveralls.io/github/ideal-postcodes/capitalise-post-town?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/ideal-postcodes/capitalise-post-town.svg)](https://greenkeeper.io/)
+[![CircleCI](https://circleci.com/gh/ideal-postcodes/capitalise-post-town.svg?style=svg)](https://circleci.com/gh/ideal-postcodes/capitalise-post-town) [![Coverage Status](https://coveralls.io/repos/github/ideal-postcodes/capitalise-post-town/badge.svg?branch=master)](https://coveralls.io/github/ideal-postcodes/capitalise-post-town?branch=master)
 
 # Capitalise UK Post Towns
 
