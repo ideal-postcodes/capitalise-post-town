@@ -53,8 +53,7 @@
     "url": "https://github.com/ideal-postcodes/capitalise_post_town/issues"
   },
   "homepage": "https://github.com/ideal-postcodes/capitalise_post_town#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/chai": "~4.1.3",
     "typescript": "~3.3.1",
