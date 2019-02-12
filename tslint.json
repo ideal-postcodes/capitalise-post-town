@@ -2,7 +2,6 @@
   "rules": {
     // core ts-lint rules
     "await-promise": [true, "Thenable"],
-    "no-unused-variable": true,
     "forin": true,
     "no-bitwise": true,
     "no-console": [
