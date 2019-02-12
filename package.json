@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ideal-postcodes/capitalise_post_town.git"
+    "url": "git+https://github.com/ideal-postcodes/capitalise-post-town.git"
   },
   "keywords": [
     "capitalise",
@@ -51,9 +51,9 @@
   "license": "MIT",
   "runkitExampleFilename": "example.js",
   "bugs": {
-    "url": "https://github.com/ideal-postcodes/capitalise_post_town/issues"
+    "url": "https://github.com/ideal-postcodes/capitalise-post-town/issues"
   },
-  "homepage": "https://github.com/ideal-postcodes/capitalise_post_town#readme",
+  "homepage": "https://github.com/ideal-postcodes/capitalise-post-town#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/chai": "~4.1.3",
