@@ -6,6 +6,7 @@ Any changes, including backwards incompatible changes will be listed here
 
 - Move typescript into dev dependencies
 - Drop unused dependencies
+- Add runkit example
 
 ## 2.0.1 (08/06/2018)
 

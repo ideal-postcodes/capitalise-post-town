@@ -49,6 +49,7 @@
   ],
   "author": "Ideal Postcodes",
   "license": "MIT",
+  "runkitExampleFilename": "example.js",
   "bugs": {
     "url": "https://github.com/ideal-postcodes/capitalise_post_town/issues"
   },
