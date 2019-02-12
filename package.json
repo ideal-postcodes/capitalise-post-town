@@ -4,9 +4,9 @@
   "description": "Capitalise UK post towns correctly",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "directories": {
-    "test": "test"
-  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "npm run lint && NODE_ENV=test node_modules/.bin/nyc node_modules/.bin/mocha --opts mocha.opts",
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json lib/**/*.ts",
