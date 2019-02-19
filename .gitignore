@@ -37,5 +37,4 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-# Source maps used for nyc
-dist/index.js.map
+dist
