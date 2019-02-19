@@ -8,11 +8,20 @@
     "dist"
   ],
   "scripts": {
-    "test": "npm run lint && NODE_ENV=test node_modules/.bin/nyc node_modules/.bin/mocha --opts mocha.opts",
+    "test": "npm run lint && NODE_ENV=test node_modules/.bin/nyc node_modules/.bin/mocha",
     "lint": "node_modules/.bin/tslint -c tslint.json -p tsconfig.json lib/**/*.ts",
     "build": "npm run lint && node_modules/.bin/tsc",
     "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls || true",
     "prepare": "npm run build"
+  },
+  "mocha": {
+    "spec": "test/*.ts",
+    "exit": true,
+    "fullTrace": true,
+    "require": [
+      "ts-node/register",
+      "source-map-support/register"
+    ]
   },
   "nyc": {
     "include": [
@@ -62,7 +71,7 @@
     "@types/node": "~11.9.0",
     "chai": "~4.2.0",
     "coveralls": "^3.0.1",
-    "mocha": "~5.2.0",
+    "mocha": "~6.0.0",
     "nyc": "~13.3.0",
     "source-map-support": "~0.5.6",
     "ts-node": "~8.0.2",
