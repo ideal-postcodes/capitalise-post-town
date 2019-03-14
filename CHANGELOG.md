@@ -5,6 +5,7 @@ Any changes, including backwards incompatible changes will be listed here
 ## 2.0.3 (14/03/2019)
 
 - Standardise tsconfig
+- Standardise tslint
 
 ## 2.0.2 (12/02/2019)
 
