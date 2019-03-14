@@ -2,6 +2,8 @@
 
 Any changes, including backwards incompatible changes will be listed here
 
+## 2.0.3 (14/03/2019)
+
 ## 2.0.2 (12/02/2019)
 
 - Move typescript into dev dependencies

@@ -1,6 +1,6 @@
 {
   "name": "capitalise-post-town",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Capitalise UK post towns correctly",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
