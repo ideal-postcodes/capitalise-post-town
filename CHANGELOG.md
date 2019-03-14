@@ -6,6 +6,7 @@ Any changes, including backwards incompatible changes will be listed here
 
 - Standardise tsconfig
 - Standardise tslint
+- Apply new code formatting standards
 
 ## 2.0.2 (12/02/2019)
 
