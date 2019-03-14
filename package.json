@@ -63,7 +63,7 @@
   "bugs": {
     "url": "https://github.com/ideal-postcodes/capitalise-post-town/issues"
   },
-  "homepage": "https://github.com/ideal-postcodes/capitalise-post-town#readme",
+  "homepage": "https://github.com/ideal-postcodes/capitalise-post-town",
   "dependencies": {},
   "devDependencies": {
     "@cablanchard/tsconfig": "0.0.1",
