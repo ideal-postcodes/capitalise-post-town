@@ -21,7 +21,14 @@ jobs:
        - image: circleci/node:8
      steps:
        - checkout
+       - restore_cache:
+           keys:
+             - npm-deps-{{ checksum "package-lock.json" }}
        - run: npm install
+       - save_cache:
+           key: npm-deps-{{ checksum "package-lock.json" }}
+           paths:
+             - node_modules/
        - run: npm test
        - run: npm run coverage
 
@@ -43,7 +50,7 @@ jobs:
        
 workflows:
   version: 2
-  node6_node8_node10:
+  ci:
     jobs:
       - node6
       - node8
