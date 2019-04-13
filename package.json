@@ -4,6 +4,20 @@
   "description": "Capitalise UK post towns correctly",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "author": {
+    "name": "Ideal Postcodes",
+    "email": "support@ideal-postcodes.co.uk",
+    "url": "https://ideal-postcodes.co.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/ideal-postcodes/FOOOB/issues",
+    "email": "support@ideal-postcodes.co.uk"
+  },
+  "homepage": "https://github.com/ideal-postcodes/FOOOB",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ideal-postcodes/FOOOB.git"
+  },
   "files": [
     "dist",
     "example.js"
@@ -46,10 +60,6 @@
     "instrument": true,
     "all": true
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ideal-postcodes/capitalise-post-town.git"
-  },
   "keywords": [
     "capitalise",
     "Post",
@@ -57,13 +67,8 @@
     "UK",
     "Addressing"
   ],
-  "author": "Ideal Postcodes",
   "license": "MIT",
   "runkitExampleFilename": "example.js",
-  "bugs": {
-    "url": "https://github.com/ideal-postcodes/capitalise-post-town/issues"
-  },
-  "homepage": "https://github.com/ideal-postcodes/capitalise-post-town",
   "dependencies": {},
   "devDependencies": {
     "@cablanchard/tsconfig": "0.0.1",
