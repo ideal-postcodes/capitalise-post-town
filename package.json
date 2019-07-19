@@ -78,7 +78,7 @@
     "@types/node": "~12.6.1",
     "chai": "~4.2.0",
     "coveralls": "^3.0.1",
-    "mocha": "~6.1.1",
+    "mocha": "~6.2.0",
     "nyc": "~14.1.0",
     "prettier": "~1.18.0",
     "source-map-support": "~0.5.6",
