@@ -75,7 +75,7 @@
     "@cablanchard/tslint": "0.0.1",
     "@types/chai": "~4.2.0",
     "@types/mocha": "~5.2.0",
-    "@types/node": "~12.11.1",
+    "@types/node": "~12.12.0",
     "chai": "~4.2.0",
     "coveralls": "^3.0.1",
     "mocha": "~6.2.0",
