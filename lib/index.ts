@@ -38,11 +38,10 @@ const exceptions = (str: string): string => {
   return str;
 };
 
-export const capitalisePostTown = (postTown: string): string => {
-  return postTown
+export const capitalisePostTown = (postTown: string): string =>
+  postTown
     .split(" ")
     .map(capitaliseWord)
     .map(checkJoins)
     .map(exceptions)
     .join(" ");
-};
