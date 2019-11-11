@@ -23,6 +23,7 @@
     "example.js"
   ],
   "scripts": {
+    "semantic-release": "semantic-release",
     "test": "npm run lint && NODE_ENV=test nyc mocha",
     "lint": "eslint lib/**/*.ts",
     "build": "tsc",
