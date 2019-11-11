@@ -10,13 +10,13 @@
     "url": "https://ideal-postcodes.co.uk"
   },
   "bugs": {
-    "url": "https://github.com/ideal-postcodes/FOOOB/issues",
+    "url": "https://github.com/ideal-postcodes/capitalise-post-town/issues",
     "email": "support@ideal-postcodes.co.uk"
   },
-  "homepage": "https://github.com/ideal-postcodes/FOOOB",
+  "homepage": "https://github.com/ideal-postcodes/capitalise-post-town",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ideal-postcodes/FOOOB.git"
+    "url": "https://github.com/ideal-postcodes/capitalise-post-town.git"
   },
   "files": [
     "dist",
