@@ -85,7 +85,7 @@
     "codecov": "~3.6.1",
     "eslint": "~6.7.1",
     "mocha": "~6.2.0",
-    "nyc": "~14.1.0",
+    "nyc": "~15.0.0",
     "prettier": "~1.19.1",
     "semantic-release": "~15.13.30",
     "source-map-support": "~0.5.6",
