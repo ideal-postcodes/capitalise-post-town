@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/ideal-postcodes/capitalise-post-town.svg?style=svg)](https://circleci.com/gh/ideal-postcodes/capitalise-post-town) [![codecov](https://codecov.io/gh/ideal-postcodes/capitalise-post-town/branch/master/graph/badge.svg)](https://codecov.io/gh/ideal-postcodes/capitalise-post-town) ![Dependencies](https://img.shields.io/david/ideal-postcodes/capitalise-post-town.svg?style=flat) ![Size](https://img.shields.io/bundlephobia/min/capitalise-post-town.svg?style=flat)
+![CI](https://github.com/ideal-postcodes/capitalise-post-town/workflows/CI/badge.svg) [![codecov](https://codecov.io/gh/ideal-postcodes/capitalise-post-town/branch/master/graph/badge.svg)](https://codecov.io/gh/ideal-postcodes/capitalise-post-town) ![Dependencies](https://img.shields.io/david/ideal-postcodes/capitalise-post-town.svg?style=flat) ![Size](https://img.shields.io/bundlephobia/min/capitalise-post-town.svg?style=flat)
 
 # Capitalise UK Post Towns
 
