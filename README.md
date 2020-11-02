@@ -10,6 +10,10 @@ Takes into account odd peculiar naming rules and exceptions
 
 Input needs to be correctly spaced and/or hyphenated
 
+## Links
+
+- [Get browser ready JS bundles](https://github.com/ideal-postcodes/capitalise-post-town-bundled)
+
 ## Install
 
 ```
