@@ -4,7 +4,7 @@
 
 [![Try capitalise-post-town on RunKit](https://badge.runkitcdn.com/capitalise-post-town.svg)](https://npm.runkit.com/capitalise-post-town)
 
-Small javascript library and test suite that will properly capitalise post town names
+Small JavaScript library and test suite that will properly capitalise post town names
 
 Takes into account odd peculiar naming rules and exceptions
 
@@ -38,6 +38,6 @@ capitalisePostTown("WALTON on THE naze") // => Walton on the Naze
 capitalisePostTown("BO'NESS") // => Bo'Ness
 ```
 
-## License
+## Licence
 
 MIT
