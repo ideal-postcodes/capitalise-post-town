@@ -30,10 +30,12 @@ const checkJoins = (string: string): string => {
 };
 
 const boness = /bo'ness/i;
+const bfpo = /bfpo/i
 
 // Handles unusual names which cannot be easily generalised into a rule
 const exceptions = (str: string): string => {
   if (str.match(boness)) return "Bo'Ness";
+  if (str.match(bfpo)) return "BFPO";
 
   return str;
 };
