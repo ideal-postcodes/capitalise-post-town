@@ -19,4 +19,7 @@ describe("capitalise", () => {
       assert.equal(capitalisePostTown(capitalisedPosttowns[i]), posttowns[i]);
     });
   }
+  it ("correctly capitalises BFPO", () => {
+    assert.equal(capitalisePostTown("BFPO"), "BFPO");
+  });
 });

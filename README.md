@@ -36,6 +36,7 @@ capitalisePostTown("WALTON on THE naze") // => Walton on the Naze
 
 // Exception
 capitalisePostTown("BO'NESS") // => Bo'Ness
+capitalisePostTown("BFPO") // => BFPO
 ```
 
 ## License
