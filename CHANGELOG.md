@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/ideal-postcodes/capitalise-post-town/compare/3.0.0...3.0.1) (2021-04-23)
+
+
+### Bug Fixes
+
+* **Release:** Trigger release ([237aa01](https://github.com/ideal-postcodes/capitalise-post-town/commit/237aa01194d209703fca4a5dff7b682f345c785c))
+
 # [3.0.0](https://github.com/ideal-postcodes/capitalise-post-town/compare/2.0.3...3.0.0) (2021-02-18)
 
 
