@@ -80,7 +80,7 @@
     "@cablanchard/tsconfig": "2.0.0",
     "@types/chai": "~4.3.0",
     "@types/mocha": "~8.2.0",
-    "@types/node": "~17.0.5",
+    "@types/node": "~18.8.3",
     "chai": "~4.3.0",
     "codecov": "~3.8.0",
     "eslint": "~7.32.0",
